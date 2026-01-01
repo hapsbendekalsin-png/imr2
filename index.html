@@ -13,11 +13,17 @@
   <body>
   <h1>İstanbul Manevi Rehber</h1>
   <p>GitHub Pages çalışıyor!</p>
+<br>
+<button onclick="addVisit('test')">Ziyaret Ettim</button>
+<button onclick="toggleFavorite('test')">❤️ Favori</button>
+<p id="rozet"></p>
+
+<script src="app.js"></script>
 <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js');
-  }
-</script>  
+  // Rozetleri göster
+  const badges = JSON.parse(localStorage.getItem('imr_badge') || '[]');
+  document.getElementById('rozet').textContent = 'Rozetler: ' + badges.join(', ');
+</script>
   </body>
 </html>
 
@@ -32,3 +38,4 @@
   const badges = JSON.parse(localStorage.getItem('imr_badge') || '[]');
   document.getElementById('rozet').textContent = 'Rozetler: ' + badges.join(', ');
 </script>
+
