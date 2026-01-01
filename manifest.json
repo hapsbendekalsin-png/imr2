@@ -1,0 +1,12 @@
+{
+  "name": "İstanbul Manevi Rehber",
+  "short_name": "İMR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#102219",
+  "theme_color": "#13ec80",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
