@@ -26,4 +26,5 @@ function checkBadges(count) {
   if (count >= 5 && !badges.includes('Gezgin')) badges.push('Gezgin');
   if (count >= 10 && !badges.includes('Keşifçi')) badges.push('Keşifçi');
   localStorage.setItem(badgeKey, JSON.stringify(badges));
+  document.getElementById('rozet').textContent = 'Rozetler: ' + badges.join(', ');
 }
