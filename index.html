@@ -21,3 +21,14 @@
   </body>
 </html>
 
+
+<button onclick="addVisit('test')">Ziyaret Ettim</button>
+<button onclick="toggleFav('test')">❤️ Favori</button>
+<p id="rozet"></p>
+
+<script src="app.js"></script>
+<script>
+  // Rozetleri göster
+  const badges = JSON.parse(localStorage.getItem('imr_badge') || '[]');
+  document.getElementById('rozet').textContent = 'Rozetler: ' + badges.join(', ');
+</script>
